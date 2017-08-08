@@ -10,14 +10,15 @@ fun todoTask26_(): Nothing = TODO(
         Make all the changes to the file MyDate.kt.
 
         Tips: In Kotlin 'in' checks are translated to the corresponding 'contains' calls.
-        You can add a method 'fun contains(d: MyDate)' to the class 'DateRange' to allow 'in' checks with a range of dates.
-        Alternatively, you can make the class 'DateRange' implement the 'ClosedRange' interface from the standard library.
+        You can add a method 'fun contains(d: MyDate)' to the class 'DateRange' to allow 'in'
+        checks with a range of dates.
+        Alternatively, you can make the class 'DateRange' implement the 'ClosedRange' interface
+        from the standard library.
     """,
     documentation = doc26(),
     references = { range: ClosedRange<Int> -> }
 )
 
 fun checkInRange(date: MyDate, first: MyDate, last: MyDate): Boolean {
-    todoTask26_()
-//    return date in DateRange(first, last)
+    return date in DateRange(first, last)
 }
